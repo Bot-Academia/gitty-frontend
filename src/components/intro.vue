@@ -23,6 +23,7 @@ export default {
 <style scoped>
 #intro{
     background-color: #edf057;
+    border-color: #edf057;
 }
 
 .logo{

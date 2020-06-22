@@ -1,7 +1,7 @@
 <template>
 <div id="header">
     <b-navbar toggleable="lg" type="light">
-    <b-navbar-brand href="#">Gitty</b-navbar-brand>
+    <b-navbar-brand href="#" class="brand">Gitty</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -13,7 +13,7 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="https://github.com/Bot-Academia/gitty"><i class="fab fa-github-alt"></i></b-nav-item>
+        <b-nav-item href="https://github.com/Bot-Academia/gitty" target="_blank"><i class="fab fa-github-alt"></i></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -28,6 +28,10 @@ export default {};
 
 #header{
     background-color: #edf057;
+}
+
+.brand{
+  font-size: 2rem;
 }
 
 i{
