@@ -1,8 +1,8 @@
 <template>
   <div>
-   <appheader></appheader>
+    <appheader></appheader>
     <features></features>
-      <appfooter></appfooter>
+    <appfooter></appfooter>
   </div>
 </template>
 
@@ -15,25 +15,25 @@ export default {
   name: "App",
   components: {
     appheader: header,
-      appfooter: footer,
-      features: screenshot
+    appfooter: footer,
+    features: screenshot,
   },
 };
 </script>
 
 <style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #212529;
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    html {
-        scroll-behavior: smooth;
-        min-height: 100%;
-        min-width: 100%;
-        position: relative;
-        max-width: 100%;
-    }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #212529;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  max-width: 100%;
+}
 </style>
