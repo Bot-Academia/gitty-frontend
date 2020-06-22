@@ -24,7 +24,7 @@ export default {
 <style>
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #212529;
+  background-color: #24252a;
   min-height: 100%;
   display: flex;
   flex-direction: column;
