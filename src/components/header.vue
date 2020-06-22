@@ -20,14 +20,9 @@
 </div>    
 </template>
 
-
 <script>
-export default {
-    
-}
+export default {};
 </script>
-
-
 
 <style scoped>
 
@@ -38,5 +33,4 @@ export default {
 i{
     font-size: 25px;
 }
-
 </style>
