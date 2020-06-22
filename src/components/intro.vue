@@ -7,7 +7,7 @@
         </div>
         <div class="buttons">
             <a class="btn btn-lg" href="https://bit.ly/37R8d20"><i class="fab fa-discord"></i> Add to Discord</a>
-            <a class="btn btn-lg" href="#">See features</a>
+            <a class="btn btn-lg" href="#features">See features</a>
         </div>
     </div>
 </template>
@@ -32,6 +32,10 @@ export default {
 .caption{
     text-align: center;
 }
+.caption h1{
+    font-weight: bold;
+}
+
 .caption p{
     font-size: 2rem;
 }
@@ -52,7 +56,7 @@ export default {
     margin-right: 15px;
     color: white;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 .buttons a:nth-child(2){
