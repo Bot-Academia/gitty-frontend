@@ -1,25 +1,29 @@
 <template>
   <div id="app">
-   <appheader></appheader>
-   <appintro></appintro>
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#edf057" fill-opacity="1" d="M0,256L1440,64L1440,0L0,0Z"></path></svg>
-   <features id="features"></features>
+   <appheader @namewasreset="selected = $event"></appheader>
+    <component :is="selected">
+    </component>
     <appfooter></appfooter>
   </div>
 </template>
 
 <script>
 import header from "./components/header.vue";
-import intro from "./components/intro";
 import footer from "./components/footer";
-import screenshot from "./components/screenshot";
+import apphome from "./apphome";
+import contact from "./contact";
 export default {
   name: "App",
+    data(){
+      return{
+            selected: "apphome",
+        };
+    },
   components: {
     appheader: header,
-    appintro: intro,
     appfooter: footer,
-    features: screenshot,
+    apphome: apphome,
+    contact: contact
   },
 };
 </script>

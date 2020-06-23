@@ -1,14 +1,14 @@
 <template>
 <div id="header">
     <b-navbar toggleable="lg" type="light">
-    <b-navbar-brand href="#" class="brand">Gitty</b-navbar-brand>
+    <b-navbar-brand @click="change1('apphome')" class="brand">Gitty</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="https://discord.gg/VNXVUt6">Support Server</b-nav-item>
-        <b-nav-item href="mailto:botacademia@protonmail.com">Feedback</b-nav-item>
+        <b-nav-item @click="change2('contact')">Feedback</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -21,7 +21,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+        change1(item) {
+            this.$emit("namewasreset", item);
+        },
+        change2(item) {
+            this.$emit("namewasreset", item);
+        },
+    }
+};
 </script>
 
 <style scoped>
@@ -36,5 +45,8 @@ export default {};
 
 i{
     font-size: 25px;
+}
+.brand{
+    cursor: pointer;
 }
 </style>
