@@ -1,4 +1,6 @@
-# gitty-frontend
+# Gitty-frontend
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d663ab43-f553-4d44-a59e-c9a01c809083/deploy-status)](https://app.netlify.com/sites/gittybot/deploys)
+It is the website of Gitty-The Github helper. [See here](https://gittybot.netlify.app/).
 
 ## wireframe
 
