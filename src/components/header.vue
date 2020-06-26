@@ -8,6 +8,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item href="https://discord.gg/VNXVUt6">Support Server</b-nav-item>
+         <b-nav-item href="https://gitty-guide.netlify.app/" target="_blank">Guide</b-nav-item>
         <b-nav-item @click="change2('contact')">Feedback</b-nav-item>
       </b-navbar-nav>
 
